@@ -3,7 +3,7 @@
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts",
     "generate": "drizzle-kit generate:sqlite --out ./drizzle/migrations --breakpoints --schema=./drizzle/schema.ts",
-    "migrate": "bun drizzle/migrate",
+    "migrate": "bun ./drizzle/migrate",
     "studio": "drizzle-kit studio --port 3333"
   },
   "dependencies": {
